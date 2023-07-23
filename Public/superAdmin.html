@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Frontend App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>SUPER ADMIN PANEL</h1>
+    <h3>Create User</h3>
+    <!-- Sample HTML form -->
+    <form id="createUserForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+            
+            <option value="ADMIN">ADMIN</option>
+            <option value="BASIC">BASIC</option>
+        </select>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Create User</button>
+    </form>
+
+    <h1>Get Logs (Super Admin Only)</h1>
+    <button id="getLogsBtn">Get Logs</button>
+    <div id="logsContainer"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
